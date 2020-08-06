@@ -1,17 +1,17 @@
 {
-    "homepage": "https://calibre-ebook.com/",
-    "version": "4.7.0",
-    "description": "Powerful and easy to use e-book manager.",
+    "version": "4.22.0",
+    "description": "Powerful and easy to use e-book manager",
+    "homepage": "https://calibre-ebook.com",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://www.fosshub.com/Calibre.html/calibre-64bit-4.7.0.msi",
-            "hash": "1a67333bf2061f1b54226cf073dc4c9502c7a68bbb097506bc4bed13aef72b66",
+            "url": "https://github.com/kovidgoyal/calibre/releases/download/v4.22.0/calibre-64bit-4.22.0.msi",
+            "hash": "0af41d8da62659a56012c58b189f8d350e7a10993bc0fccaf28c13fe03dc2037",
             "extract_dir": "PFiles\\Calibre2"
         },
         "32bit": {
-            "url": "https://www.fosshub.com/Calibre.html/calibre-4.7.0.msi",
-            "hash": "9bbc6e513183431294052e903717516e42dd17353151aed0d966c251a6fa6494",
+            "url": "https://github.com/kovidgoyal/calibre/releases/download/v4.22.0/calibre-4.22.0.msi",
+            "hash": "6419949f97d6da35e77ace0bfcd4048c6d122b51847d42290953a0cd222333ba",
             "extract_dir": "PFiles\\Calibre"
         }
     },
@@ -54,16 +54,15 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.fosshub.com/Calibre.html",
-        "regex": "softwareVersion\">([\\d.]+)"
+        "github": "https://github.com/kovidgoyal/calibre"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.fosshub.com/Calibre.html/calibre-64bit-$version.msi"
+                "url": "https://github.com/kovidgoyal/calibre/releases/download/v$version/calibre-64bit-$version.msi"
             },
             "32bit": {
-                "url": "https://www.fosshub.com/Calibre.html/calibre-$version.msi"
+                "url": "https://github.com/kovidgoyal/calibre/releases/download/v$version/calibre-$version.msi"
             }
         }
     }

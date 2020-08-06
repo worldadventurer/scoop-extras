@@ -1,0 +1,27 @@
+{
+    "version": "9.3.40.0",
+    "description": "Data backup and synchronization software",
+    "homepage": "https://www.2brightsparks.com/download-syncbackfree.html",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.2brightsparks.com/download-syncbackfree.html#tab2"
+    },
+    "url": "https://www.2brightsparks.com/assets/software/SyncBack_Setup.exe",
+    "hash": "b2c322cec48b6cfc70c1019627928b2453d0d9131f03dd36572b5c35b28e58e4",
+    "innosetup": true,
+    "bin": "SyncBackFree.exe",
+    "shortcuts": [
+        [
+            "SyncBackFree.exe",
+            "SyncBackFree"
+        ]
+    ],
+    "checkver": "SyncBackFree\\s+V([\\d.]+)",
+    "autoupdate": {
+        "url": "https://www.2brightsparks.com/assets/software/SyncBack_Setup.exe",
+        "hash": {
+            "url": "https://www.2brightsparks.com/download-syncbackfree.html",
+            "regex": "SHA-256 = $sha256"
+        }
+    }
+}

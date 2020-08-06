@@ -1,14 +1,14 @@
 {
     "homepage": "https://github.com/DevTechProfile/CapFrameX",
     "description": "Frametimes analysis tool compatible with OCAT",
-    "version": "1.3.1",
+    "version": "1.5.1",
     "license": "MIT",
-    "url": "https://github.com/DevTechProfile/CapFrameX/releases/download/v1.3.1/CapFrameX_v1.3.1_Portable.zip",
-    "hash": "153a6739ebf73e32213fc423562839d06dcec07cdadb09c0364e91ebec783d44",
+    "url": "https://github.com/DevTechProfile/CapFrameX/releases/download/v1.5.1/CapFrameX_v1.5.1_Portable.zip",
+    "hash": "20a7af55d6a71a6e09a780bbc18a66f95fb66dc7dcb8f7fccb9143592c658880",
     "suggest": {
         "OCAT": "ocat"
     },
-    "extract_dir": "Release",
+    "extract_dir": "CapFrameX_v1.5.1_Portable",
     "bin": "CapFrameX.exe",
     "shortcuts": [
         [
@@ -21,6 +21,7 @@
         "url": "https://github.com/DevTechProfile/CapFrameX/releases/download/v$version/CapFrameX_v$version_Portable.zip",
         "hash": {
             "url": "$baseurl/CapFrameX_v$version_Portable.sha256"
-        }
+        },
+        "extract_dir": "CapFrameX_v$version_Portable"
     }
 }

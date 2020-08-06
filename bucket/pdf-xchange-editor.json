@@ -1,5 +1,5 @@
 {
-    "version": "8.0.335.0",
+    "version": "8.0.340.0",
     "description": "A small, fast, and feature-rich PDF viewer/editor.",
     "homepage": "https://www.tracker-software.com/product/pdf-xchange-editor",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.tracker-software.com/PDF_VE.pdf"
     },
     "url": "http://downloads.pdf-xchange.com/PDFXEdit8_Portable.zip",
-    "hash": "20b8f67473a657fb461432d1f0fcb916325a166b036e33df6b526d0f2c0dc831",
+    "hash": "d3b6cd5b917d605e2dd9e914258fa47de9e672d4607d896f1810d810f2f02673",
     "persist": [
         "History.dat",
         "Settings.dat"

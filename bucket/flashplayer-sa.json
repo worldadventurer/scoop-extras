@@ -1,5 +1,5 @@
 {
-    "version": "32.0.0.303",
+    "version": "32.0.0.403",
     "description": "Standalone version of Adobe Flash Player",
     "license": {
         "identifier": "Freeware",
@@ -7,7 +7,7 @@
     },
     "homepage": "https://get.adobe.com/flashplayer/",
     "url": "https://fpdownload.macromedia.com/pub/flashplayer/updaters/32/flashplayer_32_sa.exe#/flashplayer.exe",
-    "hash": "2fc6cfe4b8f017c17ea422a5cb85ee4527b33d0a297d00713960710e04b2bea1",
+    "hash": "af036d6f8cf19da63fbe00a0a76aebc86d43385828274139e6809aa3e3c4806a",
     "bin": "flashplayer.exe",
     "shortcuts": [
         [

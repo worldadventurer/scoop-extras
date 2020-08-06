@@ -1,16 +1,16 @@
 {
-    "version": "4.0.0",
+    "version": "5.4.0",
     "description": "Desktop client for Zulip, an open source team chat application.",
     "homepage": "https://zulipchat.com/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zulip/zulip-desktop/releases/download/v4.0.0/zulip-4.0.0-x64.nsis.7z",
-            "hash": "sha512:5b7426b2c8330e0244c9a06300fde1b25b9d77c874ed3cb1d0d202e1fe53e552c18e686b53b8f9897d1e13dd73f59e1e7a6240f69490a130ce5ab65bedaf041c"
+            "url": "https://github.com/zulip/zulip-desktop/releases/download/v5.4.0/zulip-5.4.0-x64.nsis.7z",
+            "hash": "sha512:06cafbc4363d62aef2bae7483e7dec728db8c4de181aba5c43c5f372a53ba1145f697fa8f9b8cde64f349c65b9673d1cbef970589502d6f530ed62ae36d75753"
         },
         "32bit": {
-            "url": "https://github.com/zulip/zulip-desktop/releases/download/v4.0.0/zulip-4.0.0-ia32.nsis.7z",
-            "hash": "sha512:817eedfe5f9579a90dfc402e0da14af036b326fbcd05605b2c25abf4dc3cf3bfca78c242c6422c624df711258782b884fa94d1093dd5574a022beccc981d6d5d"
+            "url": "https://github.com/zulip/zulip-desktop/releases/download/v5.4.0/zulip-5.4.0-ia32.nsis.7z",
+            "hash": "sha512:d8df9e1db59f5d8f3cc9f2ebd61cb1c8f0328411850748846d3a4c47c84ea09bec1e54b5bba19f4c6ade95bb9243460747d7ce0b7ffb16b3fd0d86a9c05fcbd7"
         }
     },
     "bin": "Zulip.exe",

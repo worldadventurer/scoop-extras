@@ -1,13 +1,13 @@
 {
-    "homepage": "https://anydesk.com/",
+    "version": "6.0.7",
     "description": "A Remote Desktop Software That Actually Works",
-    "version": "5.4.2",
+    "homepage": "https://anydesk.com/",
     "license": {
         "identifier": "Shareware",
         "url": "https://anydesk.com/terms"
     },
     "url": "https://download.anydesk.com/AnyDesk.exe",
-    "hash": "b9ad79eaf7a4133f95f24c3b9d976c72f34264dc5c99030f0e57992cb5621f78",
+    "hash": "4de898c139fb5251479ca6f9ec044cac4d83a2f5d1113b7a4b8f13468a130c97",
     "bin": "AnyDesk.exe",
     "shortcuts": [
         [
@@ -17,7 +17,7 @@
     ],
     "checkver": {
         "url": "https://download.anydesk.com/changelog.txt",
-        "re": "(?:[\\d.]+)\\s+-\\s+([\\d.]+)\\s+\\(Windows\\)"
+        "regex": "(?:[\\d.]+)\\s+-\\s+([\\d.]+)\\s+\\(Windows\\)"
     },
     "autoupdate": {
         "url": "https://download.anydesk.com/AnyDesk.exe"

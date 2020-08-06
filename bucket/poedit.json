@@ -1,10 +1,10 @@
 {
-    "version": "2.2.4",
+    "version": "2.4",
     "homepage": "https://poedit.net",
     "description": "Gettext translations editor.",
     "license": "MIT",
-    "url": "https://download.poedit.net/Poedit-2.2.4-setup.exe",
-    "hash": "afba53dba5f2fd615498cfc248448706a4263c9c3d90718de92a6df9f388c337",
+    "url": "https://download.poedit.net/Poedit-2.4-setup.exe",
+    "hash": "79147ee032b8d61d1655addb9cd9d61f0c2fd6e135cb48b0014f3f8cc011432c",
     "innosetup": true,
     "bin": "Poedit.exe",
     "shortcuts": [

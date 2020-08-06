@@ -1,12 +1,12 @@
 {
-    "version": "0.5.1-8.9",
+    "version": "0.6.0-9.1",
     "description": "Mathematics software system",
     "homepage": "https://www.sagemath.org",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sagemath/sage-windows/releases/download/0.5.1-8.9/SageMath-8.9-Installer-v0.5.1.exe",
-            "hash": "955f47f50052a9819b2c4aa9b75fc7bfa994eeb83e98a8df44beacb762a653cb"
+            "url": "https://github.com/sagemath/sage-windows/releases/download/0.6.0-9.1/SageMath-9.1-Installer-v0.6.0.exe",
+            "hash": "048f430e9b3e8fd96e995dac98e6149df365765e45f0fce323aa48a3acb0101d"
         }
     },
     "innosetup": true,

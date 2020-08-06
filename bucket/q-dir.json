@@ -1,0 +1,61 @@
+{
+    "version": "8.69",
+    "description": "A quad window file manager based on Windows File Explorer",
+    "homepage": "https://www.softwareok.com/?seite=Freeware/Q-Dir",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.softwareok.com/?seite=Freeware/Q-Dir/Eula"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip",
+            "hash": "a98ad2ed3a4a8d807268b55676db4561e7d1b34c11910ca84ba1176f0de9a8b0",
+            "bin": [
+                [
+                    "Q-Dir_x64.exe",
+                    "Q-Dir"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "Q-Dir_x64.exe",
+                    "Q-Dir"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://www.softwareok.com/Download/Q-Dir_Portable.zip",
+            "hash": "5ea8aa9ef02906bb6084c92a310b5ed1997c8c93fdec3d9d44b48ebb6f502d9f",
+            "bin": "Q-Dir.exe",
+            "shortcuts": [
+                [
+                    "Q-Dir.exe",
+                    "Q-Dir"
+                ]
+            ]
+        }
+    },
+    "extract_dir": "Q-Dir",
+    "persist": [
+        "Favoriten",
+        "Q-Dir.ini"
+    ],
+    "checkver": {
+        "url": "https://www.softwareok.com/?seite=Microsoft/Q-Dir/History",
+        "regex": "version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.softwareok.com/Download/Q-Dir_Portable.zip"
+            }
+        },
+        "hash": {
+            "url": "https://www.softwareok.com/?Download=Q-Dir",
+            "regex": "$basename.*?$sha256<"
+        }
+    }
+}

@@ -1,11 +1,11 @@
 {
     "##": "The applications listed below can be kept up to date by running https://github.com/rasa/scoops/blob/master/nlp2json.py",
-    "version": "1.23.8",
+    "version": "1.23.28",
     "description": "Over 200 freeware utilities from nirsoft.net.",
     "homepage": "https://launcher.nirsoft.net",
     "license": "Freeware",
-    "url": "https://download.nirsoft.net/nirsoft_package_enc_1.23.8.zip#/nirlauncher.enc",
-    "hash": "a0841ddb7739c40d12e17836940373e6641bca8175bd79e8770e722bac6475df",
+    "url": "https://download.nirsoft.net/nirsoft_package_enc_1.23.28.zip#/nirlauncher.enc",
+    "hash": "053700e773fec3818e889c31cc86e26935b201ad4e8d499bd7764040d0df43af",
     "pre_install": "Expand-7zipArchive \"$dir\\$fname\" -Switches '-pnirsoft9876$'",
     "persist": "NirLauncher.cfg",
     "checkver": {
@@ -122,7 +122,7 @@
                 "NirSoft/MMCSnapInsView.exe",
                 "NirSoft/MobileFileSearch.exe",
                 "NirSoft/MonitorInfoView.exe",
-                "NirSoft/MozillaCacheView.exe",
+                "NirSoft/MZCacheView.exe",
                 "NirSoft/MozillaHistoryView.exe",
                 "NirSoft/mspass.exe",
                 "NirSoft/MUICacheView.exe",
@@ -647,7 +647,7 @@
                     "NirSoft/MonitorInfoView - Displays essential information about your monitor"
                 ],
                 [
-                    "NirSoft/MozillaCacheView.exe",
+                    "NirSoft/MZCacheView.exe",
                     "NirSoft/MZCacheView - List all files currently stored in the cache of Firefox,Mozilla browser"
                 ],
                 [
@@ -1238,7 +1238,7 @@
                 "NirSoft/x64/MMCSnapInsView.exe",
                 "NirSoft/x64/MobileFileSearch.exe",
                 "NirSoft/MonitorInfoView.exe",
-                "NirSoft/MozillaCacheView.exe",
+                "NirSoft/MZCacheView.exe",
                 "NirSoft/x64/MozillaHistoryView.exe",
                 "NirSoft/mspass.exe",
                 "NirSoft/MUICacheView.exe",
@@ -1763,7 +1763,7 @@
                     "NirSoft/MonitorInfoView - Displays essential information about your monitor"
                 ],
                 [
-                    "NirSoft/MozillaCacheView.exe",
+                    "NirSoft/MZCacheView.exe",
                     "NirSoft/MZCacheView - List all files currently stored in the cache of Firefox,Mozilla browser"
                 ],
                 [

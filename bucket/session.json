@@ -1,0 +1,39 @@
+{
+    "version": "1.2.0",
+    "description": "End-to-end encrypted messenger",
+    "homepage": "https://getsession.org",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/loki-project/session-desktop/releases/download/v1.2.0/session-messenger-desktop-win-1.2.0.exe#/dl.7z",
+            "hash": "sha512:49119e89223a14b957c7ccf1a6d3b648356d45369d000514df7787d103d51416a6482c7d158b7b4be08bb0feb63505f721985796ab419b14c83959ae97862c16",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Recurse"
+                ]
+            }
+        }
+    },
+    "bin": "Session.exe",
+    "shortcuts": [
+        [
+            "Session.exe",
+            "Session"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/loki-project/session-desktop"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/loki-project/session-desktop/releases/download/v$version/session-messenger-desktop-win-$version.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "sha512:\\s+$base64"
+        }
+    }
+}

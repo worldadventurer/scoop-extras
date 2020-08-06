@@ -1,19 +1,16 @@
 {
-    "version": "19.12.16",
-    "description": "Cross-platform, open-source video editor.",
-    "homepage": "https://www.shotcut.org/",
-    "license": {
-        "identifier": "GPL-3.0-or-later",
-        "url": "https://github.com/mltframework/shotcut/blob/master/COPYING"
-    },
+    "version": "20.07.11",
+    "description": "Video editor",
+    "homepage": "https://www.shotcut.org",
+    "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mltframework/shotcut/releases/download/v19.12.16/shotcut-win64-191216.zip",
-            "hash": "d672c6206ac7bd68f4e2e384a2937fa19e2f788b46c5bd76cddc5357d75d90e7"
+            "url": "https://github.com/mltframework/shotcut/releases/download/v20.07.11/shotcut-win64-200711.zip",
+            "hash": "042af3256eebf343cf58f839bb4db06323130c97f6d0f0074491e6f69cba02b3"
         },
         "32bit": {
-            "url": "https://github.com/mltframework/shotcut/releases/download/v19.12.16/shotcut-win32-191216.zip",
-            "hash": "825d62a703d911f09d458d44e856f628fde81276bb961ed7a51f4c2abd434770"
+            "url": "https://github.com/mltframework/shotcut/releases/download/v20.07.11/shotcut-win32-200711.zip",
+            "hash": "e0859bd7ec92a04f69178bc391ec88738b9e565a59f14411ceda3b9874931c16"
         }
     },
     "extract_dir": "Shotcut",
@@ -25,7 +22,7 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/mltframework/shotcut/"
+        "github": "https://github.com/mltframework/shotcut"
     },
     "autoupdate": {
         "architecture": {

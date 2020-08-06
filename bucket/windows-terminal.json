@@ -1,10 +1,13 @@
 {
-    "version": "0.7.3451.0",
+    "version": "1.1.2021.0",
     "description": "The new Windows Terminal, and the original Windows console host - all in the same place!",
     "homepage": "https://github.com/microsoft/terminal",
     "license": "MIT",
-    "url": "https://github.com/microsoft/terminal/releases/download/v0.7.3451.0/Microsoft.WindowsTerminal_0.7.3451.0_8wekyb3d8bbwe.msixbundle#/dl.7z",
-    "hash": "2bfbc43906448179afe250954a38714662693456b10a57a51d3302197422a2b6",
+    "suggest": {
+        "vcredist": "extras/vcredist2019"
+    },
+    "url": "https://github.com/microsoft/terminal/releases/download/v1.1.2021.0/Microsoft.WindowsTerminal_1.1.2021.0_8wekyb3d8bbwe.msixbundle#/dl.7z",
+    "hash": "453a31a9ee97844d339c2a8b0b8a4636f284d1ca94fa3da7325e2c582028ce27",
     "architecture": {
         "64bit": {
             "pre_install": "Get-ChildItem \"$dir\" -Exclude '*x64.msix' | Remove-Item -Force -Recurse"
@@ -17,7 +20,8 @@
         "script": [
             "$winVer = [Environment]::OSVersion.Version",
             "if (($winver.Major -lt '10') -or ($winVer.Build -lt 18362)) { error 'At least Windows 10 18362 is required.'; break }",
-            "Get-ChildItem \"$dir\" '*.msix' | Select-Object -ExpandProperty Fullname | Expand-7zipArchive -DestinationPath \"$dir\" -Removal"
+            "Get-ChildItem \"$dir\" '*.msix' | Select-Object -ExpandProperty Fullname | Expand-7zipArchive -DestinationPath \"$dir\" -Removal",
+            "Get-ChildItem \"$dir\\ProfileIcons\" '*.png' | Rename-Item -NewName { $_.Name.Replace('%7B', '{').Replace('%7D', '}') }"
         ]
     },
     "bin": [
@@ -34,7 +38,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/microsoft/terminal/releases",
+        "github": "https://github.com/microsoft/terminal",
         "regex": "WindowsTerminal_([\\d.]+)_8wekyb3d8bbwe\\.msixbundle"
     },
     "autoupdate": {

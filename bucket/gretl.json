@@ -1,16 +1,16 @@
 {
-    "homepage": "http://gretl.sourceforge.net",
-    "version": "2019d",
+    "version": "2020c",
     "description": "Gnu Regression, Econometrics and Time-series Library",
+    "homepage": "http://gretl.sourceforge.net",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/gretl/gretl/2019d/gretl-2019d-64.exe",
-            "hash": "sha1:9bc17e510785f975da38d1b625fc8d9de4b23d62"
+            "url": "https://downloads.sourceforge.net/project/gretl/gretl/2020c/gretl-2020c-64.exe",
+            "hash": "sha1:0d58bfdf75a224f2caae659fe665900f32320888"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/gretl/gretl/2019d/gretl-2019d.exe",
-            "hash": "sha1:9c50cdd8da8b5e959e0ee45f234b3943f3ac3ffe"
+            "url": "https://downloads.sourceforge.net/project/gretl/gretl/2020c/gretl-2020c-32.exe",
+            "hash": "sha1:72cd5ba335d3d7c1842119d0da232ac3e178a2e0"
         }
     },
     "innosetup": true,
@@ -34,7 +34,7 @@
                 "url": "https://downloads.sourceforge.net/project/gretl/gretl/$version/gretl-$version-64.exe"
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/gretl/gretl/$version/gretl-$version.exe"
+                "url": "https://downloads.sourceforge.net/project/gretl/gretl/$version/gretl-$version-32.exe"
             }
         }
     }

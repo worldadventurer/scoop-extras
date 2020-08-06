@@ -1,16 +1,21 @@
 {
-    "homepage": "https://mpv.io",
+    "version": "20200802",
     "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
+    "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
-    "version": "20191229",
+    "notes": [
+        "To set up file type associations and AutoPlay handlers run '$dir\\installer\\mpv-install.bat' as administrator.",
+        "This doesn't need to be done everytime you update mpv however, do keep in mind that if you want to uninstall mpv you'll need to run '$dir\\installer\\mpv-uninstall.bat' beforehand since this action will not be performed automatically.",
+        "You can use Icaros (https://www.majorgeeks.com/files/details/icaros.html) to enable thumbnails for all media types."
+    ],
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit/mpv-x86_64-20191229-git-49cbc50.7z",
-            "hash": "sha1:39b0405de523716695d1dea438ea163b2a8b911e"
+            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit/mpv-x86_64-20200802-git-b238897.7z",
+            "hash": "sha1:00c1426f1ff568759501477a341565a899e485c1"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/32bit/mpv-i686-20191229-git-49cbc50.7z",
-            "hash": "sha1:4cc9d0944f23c7a64877f7697366a165c1d7b52b"
+            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/32bit/mpv-i686-20200802-git-b238897.7z",
+            "hash": "sha1:d4e3fd17ab6457c4b5c3b35230709aaa678022c8"
         }
     },
     "bin": "mpv.com",
@@ -24,11 +29,6 @@
     "suggest": {
         "youtube-dl": "youtube-dl"
     },
-    "notes": [
-        "To set up file type associations and AutoPlay handlers run '$dir\\installer\\mpv-install.bat' as administrator.",
-        "This doesn't need to be done everytime you update mpv however, do keep in mind that if you want to uninstall mpv you'll need to run '$dir\\installer\\mpv-uninstall.bat' beforehand since this action will not be performed automatically.",
-        "You can use Icaros (https://www.majorgeeks.com/files/details/icaros.html) to enable thumbnails for all media types."
-    ],
     "checkver": {
         "url": "https://sourceforge.net/projects/mpv-player-windows/rss?path=/64bit",
         "regex": "mpv-x86_64-(\\d+)-git-(?<commit>[\\da-f]+)\\.7z"

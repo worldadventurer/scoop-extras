@@ -1,12 +1,16 @@
 {
+    "version": "2.32.0",
+    "description": "Code snippet organizer for pro developers",
     "homepage": "https://www.cacher.io/",
-    "version": "2.22.1",
     "license": "Shareware",
-    "description": "Code snippet organizer for pro developers.",
-    "url": "https://s3.amazonaws.com/download.cacher.io/Cacher%20Setup%202.22.1.exe#/dl.7z",
-    "hash": "sha512:07778091ab4d15b24335248b3cb750f77735cbb29d288e36b718644c82457933c5515c684c55805bfc69582c21c888224fe47e8880fd0c69531eb92df0bad3e2",
-    "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+    "architecture": {
+        "64bit": {
+            "url": "https://s3.amazonaws.com/download.cacher.io/Cacher%20Setup%202.32.0.exe#/dl.7z",
+            "hash": "sha512:2c877f4e0e3ebbce19b46547100d4d90e392afe89f5b4276cdd57495d1cbe517b298eee8ceb6d4d926fc072f0e8ba32cdef04ac5c20b15646546d89b3961b1d9",
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$*\" -Recurse",
     "shortcuts": [
         [
             "Cacher.exe",
@@ -21,7 +25,7 @@
         "url": "https://s3.amazonaws.com/download.cacher.io/Cacher%20Setup%20$version.exe#/dl.7z",
         "hash": {
             "url": "$baseurl/latest.yml",
-            "find": "sha512:\\s+(.*)"
+            "find": "sha512:\\s+$base64"
         }
     }
 }

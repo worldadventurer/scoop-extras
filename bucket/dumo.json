@@ -1,14 +1,15 @@
 {
-    "homepage": "https://www.kcsoftwares.com/?dumo",
+    "version": "2.22.2.105",
     "description": "Detecting and updating required drivers",
-    "version": "2.20.0.99",
+    "homepage": "https://www.kcsoftwares.com/?dumo",
     "license": {
         "identifier": "Freeware",
         "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
     },
     "url": "https://www.kcsoftwares.com/files/dumo.zip",
-    "hash": "14f8c3a63049178cd2c1bfce8163c47b2eccda9cf152544bf30de812c57a9954",
+    "hash": "60d895b22d733e05cc0e3fe3443480aa67a11f6303dd2003ad12f539a0a0cc43",
     "extract_dir": "dumo",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\settings.ini\")) { Set-Content \"$dir\\settings.ini\" '[Settings]', 'AutoUpdate=0' -Encoding Ascii }",
     "bin": "DUMo.exe",
     "shortcuts": [
         [
@@ -19,7 +20,7 @@
     "persist": "settings.ini",
     "checkver": {
         "url": "https://www.kcsoftwares.com/?download",
-        "regex": "(?sm)<h3>DUMo</h3>\\n\\t+<small>Version : <code>([\\d.]+)</code>"
+        "regex": "(?sm)DUMo</h.*?Version\\s+:\\s*<code>([\\d.]+)</"
     },
     "autoupdate": {
         "url": "https://www.kcsoftwares.com/files/dumo.zip"

@@ -1,16 +1,16 @@
 {
-    "homepage": "https://github.com/0xd4d/dnSpy",
-    "version": "6.1.2",
-    "license": "GPL-3.0-only",
+    "version": "6.1.6",
     "description": ".NET debugger and assembly editor.",
+    "homepage": "https://github.com/0xd4d/dnSpy",
+    "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/0xd4d/dnSpy/releases/download/v6.1.2/dnSpy-netcore-win64.zip",
-            "hash": "83c4776ef36c915325ffc996b752828e97f12d17d93e207f039eca2051a8eee7"
+            "url": "https://github.com/0xd4d/dnSpy/releases/download/v6.1.6/dnSpy-netcore-win64.zip",
+            "hash": "080cae8f6519ae9b2ad02a438e526ebd816ce9fa9f2152bd5c47f4e05bdaaa42"
         },
         "32bit": {
-            "url": "https://github.com/0xd4d/dnSpy/releases/download/v6.1.2/dnSpy-netcore-win32.zip",
-            "hash": "0d06a4a4a51f0c6a92cfeb46bcffa01a415d60bb0b81918d9faafff9f8fdb109"
+            "url": "https://github.com/0xd4d/dnSpy/releases/download/v6.1.6/dnSpy-netcore-win32.zip",
+            "hash": "2b92482cc3a3c3cf21acbfa4438ba24440db417ac0e76170b916578b9cfa1764"
         }
     },
     "bin": [
